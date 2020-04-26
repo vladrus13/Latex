@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english,russian]{babel}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
+\usepackage[pdftex]{graphicx}
+
+\title{Templates}
+\author{vladrus13}
+\date{2020}
+
+%%% Some commands
+\newcommand{\Approval}[2]{
+    \begin{minipage}{0.4\textwidth}
+        #1
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.4\textwidth}
+        (#2)
+    \end{minipage}
+}
+
+\newcommand{\Axiom}[2]{
+    \Approval{#1}{Axiom #2}
+}
+
+\newcommand{\Hypo}[2]{
+    \Approval{#1}{Hypo. #2}
+}
+
+\newcommand{\MP}[2]{
+    \Approval{#1}{M.P. #2}
+}
+
+\begin{document}
+
+\maketitle
+
+\end{document}
